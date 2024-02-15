@@ -1,0 +1,15 @@
+'''
+from git import *
+repo = Repo(r"C:\Users\William-School\dev\ProjectLog")
+print(repo)
+
+commit_messages = []
+
+commits = repo.iter_commits()
+print(commits)
+for commit in commits:
+    commit_messages.append(commit.message)
+    print(commit.message)
+    
+print(commit_messages)
+'''
